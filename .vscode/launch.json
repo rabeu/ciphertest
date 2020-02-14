@@ -2,11 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-DemoApplication<mcipher>",
+            "name": "Spring Boot-CipherApplication<mcipher>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.marceu.mcipher.DemoApplication",
+            "mainClass": "com.marceu.mcipher.CipherApplication",
             "projectName": "mcipher",
             "args": ""
         }

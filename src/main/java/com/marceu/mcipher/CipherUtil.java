@@ -21,9 +21,10 @@ public class CipherUtil {
 
         StringBuffer result = CipherUtil.ceasarEncrypt(plainText, (shifts*-1));
 
-        String plainToCipher = result.toString().replaceAll(SPACE_CONST," ");
+        //replacing the X would cause an issue with the actual character in the message, so out of the scope for this demo.
+        //String plainToCipher = result.toString().replaceAll(SPACE_CONST," ");
 
-        return new CipherModel("Caesar", plainText, plainToCipher , shifts);
+        return new CipherModel("Caesar", plainText, result.toString(), shifts);
 
     }
 
@@ -59,9 +60,10 @@ public class CipherUtil {
 
         String cipherText = CipherUtil.atbashEncrypt(plainText);
 
-        String plainToCipher = cipherText.replaceAll(SPACE_CONST," ");
+        //replacing the X would cause an issue with the actual character in the message, so out of the scope for this demo.
+        //String plainToCipher = cipherText.replaceAll(SPACE_CONST," ");
 
-        return new CipherModel("Atbash", plainText, plainToCipher);
+        return new CipherModel("Atbash", plainText, cipherText);
     }
 
     public static String atbashEncrypt(final String plainText){
@@ -89,7 +91,7 @@ public class CipherUtil {
     }
 
     private static String prepareText(String text){
-        text = text.replaceAll("\\s+","X");
+        text = text.replaceAll("\\s+",SPACE_CONST);
         text = text.toUpperCase();
         return text;
     }
