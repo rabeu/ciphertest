@@ -14,5 +14,9 @@ docker load -i marceuciphertest.tar
 To run the docker image
 $ docker run -p 8080:8080 -t marceu/marceucipherdockerimage
 
+# Swagger docs
+The swagger docs are accessible through the link:
+http://localhost:8080/swagger-ui.html
+
 # Public link for Postman Collection for the 4 REST tests
 https://www.postman.com/collections/eb4038152bb23a42590a
