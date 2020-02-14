@@ -6,8 +6,7 @@ To test, go to the main dir and run
 $ ./gradlew test
 
 # Docker
-The docker image has been saved as marceuciphertest.tar
-I don't like to push binary files into git but this is just a demo and an easier way to transfer a 100+ Mb file than sending in an email.
+The docker image has been sent in a separate e-mail to access from a Dropbox
 
 To load the docker image
 docker load -i marceuciphertest.tar
